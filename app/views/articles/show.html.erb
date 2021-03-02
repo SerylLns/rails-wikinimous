@@ -1,0 +1,6 @@
+<div>
+  <h2> <%= @article.title %></h2>
+  <%= link_to "iconWrite", edit_article_path(@article) %>
+  <%= link_to "iconDelete", article_path(@article), method: :delete, data: {confirm: "Are you sure ?"}  %>
+</div>
+<p><%= @article.content %></p>
