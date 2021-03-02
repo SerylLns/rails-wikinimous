@@ -1,6 +1,8 @@
 <div>
+  <hr>
   <h2> <%= @article.title %></h2>
-  <%= link_to "iconWrite", edit_article_path(@article) %>
-  <%= link_to "iconDelete", article_path(@article), method: :delete, data: {confirm: "Are you sure ?"}  %>
+  <hr>
+  <i class="fas fa-pen-square"> <%= link_to "Edit  ", edit_article_path(@article) %> </i>
+  <i class="fas fa-trash"> <%= link_to " Delete", article_path(@article), method: :delete, data: {confirm: "Are you sure ?"}  %> </i>
 </div>
 <p><%= @article.content %></p>
